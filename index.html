@@ -29,15 +29,15 @@
   
   .top-cup {
     position: absolute;
-    left: 350px;
-    top: 200px;
+    left: 380px;
+    top: 230px;
     
   }
   
   .bottom-cup {
     position: absolute;
-    left: 350px;
-    top: 300px;
+    left: 380px;
+    top: 330px;
     
     border-radius: 0% 0% 28% 28% / 10% 10% 23% 23%;
     
@@ -45,8 +45,8 @@
   
   .stacked-cup {
     position: absolute;
-    left: 200px;
-    top: 30px;
+    left: 235px;
+    top: 60px;
     
     border-radius: 0% 0% 28% 28% / 10% 10% 23% 23%;
     
@@ -92,18 +92,18 @@
   
   .front-cafe {
     position: absolute;
-    left: 150px;
-    top: 130px;
+    left: 180px;
+    top: 160px;
   }
   
  .back-cafe {
     position: absolute;
-    left: 200px;
-    top: 130px;
+    left: 230px;
+    top: 160px;
   }
   
   .bottom {
-    background: grey;
+    background: 	rgb(192,192,192);
     border: 1px solid black;
     border-radius: 30px;
     
@@ -120,16 +120,22 @@
     height: 60px;
     
     transform: translate(0px, 40px);
+    
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 10px 20px 10px 0px;
   }
-  
+
   .top {
     background: yellow;
     border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
     
     width: 202px;
     height: 15px;
     
-    transform: translate(-2px, 0px);
+    transform: translate(-2px, -2px);
   }
   
   .top-label {
@@ -143,6 +149,45 @@
     font-size: 18px;
     font-family: fantasy;
     transform: translate(0px, 30px);
+  }
+  
+  .kettle-top1 {
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    
+    width: 200px;
+    height: 200px;
+    
+    background: rgb(255,77,0);
+    border: 1px solid black;
+    border-radius: 0% 0% 20% 20% / 10% 10% 70% 70%;
+  }
+  
+  .kettle-top2 {
+    position: absolute;
+    left: 60px;
+    top: 260px;
+    
+    width: 150px;
+    height: 30px;
+    
+    background: rgb(255,77,0);
+    border: 1px solid black;
+
+  }
+  
+  .kettle-bottom {
+    position: absolute;
+    left: 20px;
+    top: 290px;
+    
+    background: 	linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.60) 50%, rgba(255,255,255,0) 100%), rgb(192,192,192);
+    border: 1px solid black;
+    border-radius: 20% 20% 10% 10% / 100% 100% 0% 0%;
+    
+    width: 206px;
+    height: 140px;
   }
   
 </style>
@@ -170,11 +215,15 @@
   
   <div class="cup stacked-cup"></div>
   
+  <div class="kettle-top1"></div>
+  <div class="kettle-top2"></div>
+  <div class="kettle-bottom"></div>
+  
   <div class="cafe front-cafe">
     <div class="top"></div>
     <div class="top-label">AFÉ USTLO</div>
     <div class="bottom-label">cafe expresso moods</div>
-    <div class="stripe">I cannot tell you waht this says but ik it's nutrition info</div>
+    <div class="stripe">I cannot tell you what this says fr but ik it's nutrition info (28.3g)</div>
     <div class="bottom"></div>
   </div>
   
