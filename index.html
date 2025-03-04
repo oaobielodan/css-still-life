@@ -69,7 +69,56 @@
   }
   
   .handle1 {
+    background: white;
+    border-left: 1px solid black;  
+    border-right: 1px solid black; 
     
+    width: 25px;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  
+  .cafe {
+    background: yellow;
+    border: 1px solid black;
+    
+    width: 200px;
+    height: 270px;
+    
+  }
+  
+  .front-cafe {
+    position: absolute;
+    left: 150px;
+    top: 130px;
+  }
+  
+ .back-cafe {
+    position: absolute;
+    left: 200px;
+    top: 130px;
+  }
+  
+  .bottom-line {
+    background: grey;
+    border: 1px solid black;
+    
+    width: 206px;
+    height: 10px;
+    
+    transform: translate(-3px, 160px);
+  }
+  
+  .stripe {
+    background: red;
+    
+    width: 198px;
+    height: 75px;
+    
+    transform: translate(0px, 160px);
   }
 
 </style>
@@ -77,15 +126,26 @@
 
 <div class="frame">
 	<!-- ur HTML code goes here --> 
+  <div class="cafe back-cafe">
+    <div class="stripe"></div>
+    <div class="bottom-line"></div>
+  </div>
+  
   <div class="cup top-cup">
-    <div class="triangle"><div class="star"></div></div>
     <div class="handle1"></div>
+    <div class="triangle"><div class="star"></div></div>
   </div>
   
   <div class="cup bottom-cup">
-    <div class="triangle"><div class="star"></div></div>
     <div class="handle1"></div>
+    <div class="triangle"><div class="star"></div></div>
   </div>
   
   <div class="cup stacked-cup"></div>
+  
+  <div class="cafe front-cafe">
+    <div class="stripe"></div>
+    <div class="bottom-line"></div>
+  </div>
+  
 </div>
