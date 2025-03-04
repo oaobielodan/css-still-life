@@ -82,12 +82,12 @@
   }
   
   .cafe {
-    background: yellow;
-    border: 1px solid black;
-    
     width: 200px;
     height: 270px;
     
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.30) 50%, rgba(255,255,255,0) 100%), yellow;
+    background-size: 100% 100%, 100% 100%;
+    border: 1px solid black;
   }
   
   .front-cafe {
@@ -102,33 +102,60 @@
     top: 130px;
   }
   
-  .bottom-line {
+  .bottom {
     background: grey;
     border: 1px solid black;
+    border-radius: 30px;
     
     width: 206px;
     height: 10px;
     
-    transform: translate(-3px, 160px);
+    transform: translate(-3px, 30px);
   }
   
   .stripe {
     background: red;
     
     width: 198px;
-    height: 75px;
+    height: 60px;
     
-    transform: translate(0px, 160px);
+    transform: translate(0px, 40px);
   }
-
+  
+  .top {
+    background: yellow;
+    border: 1px solid black;
+    
+    width: 202px;
+    height: 15px;
+    
+    transform: translate(-2px, 0px);
+  }
+  
+  .top-label {
+    font-size: 55px;
+    
+    overflow: hidden;
+    transform: translate(0px, 30px);
+  }
+  
+  .bottom-label {
+    font-size: 18px;
+    font-family: fantasy;
+    transform: translate(0px, 30px);
+  }
+  
 </style>
 
 
 <div class="frame">
 	<!-- ur HTML code goes here --> 
   <div class="cafe back-cafe">
+    <div class="top"></div>
+    <div class="top-label">USTLFE HE</div>
+    <div class="bottom-label">cafe expresso moods</div>
     <div class="stripe"></div>
-    <div class="bottom-line"></div>
+    <div class="bottom"></div>
   </div>
   
   <div class="cup top-cup">
@@ -144,8 +171,11 @@
   <div class="cup stacked-cup"></div>
   
   <div class="cafe front-cafe">
-    <div class="stripe"></div>
-    <div class="bottom-line"></div>
+    <div class="top"></div>
+    <div class="top-label">AFÉ USTLO</div>
+    <div class="bottom-label">cafe expresso moods</div>
+    <div class="stripe">I cannot tell you waht this says but ik it's nutrition info</div>
+    <div class="bottom"></div>
   </div>
   
 </div>
